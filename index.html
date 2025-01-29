@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Legal Solutions</title>
+    <link
+      rel="shortcut icon"
+      href="./images/business.png"
+      type="image/x-icon"
+    />
 
     <!--Google font: EB Garamond-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,22 +41,122 @@
               clifford: "#da373d",
               primaryColor: "#B68C5A",
             },
-            fontfamily: {
-              Garamond: "EB Garamond",
-              serif,
+            fontFamily: {
+              Garamond: ["EB Garamond", "serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-Garamond">
     <!--Header Start-->
-    <header></header>
+    <header class="w-11/12 mx-auto">
+      <!--Nav Start-->
+      <nav class="py-12">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Contact us <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost"
+              ><img src="./images/logo2.png" alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg text-[#707070]">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Contact us <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="bg-primaryColor py-4 px-8 text-white text-lg font-semibold rounded-lg"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!--Banner Section-->
+      <div class="banner bg-[url('./images/banner.png')] bg-cover">
+        <div
+          class="py-40 px-10 bg-[linear-gradient(to_top,rgba(17,17,17,1),rgba(17,17,17,0))]"
+        >
+          <h1 class="text-7xl font-bold text-white text-center mb-8">
+            We Provide Effective <br />
+            Legal Solutions
+          </h1>
+          <p
+            class="text-[color:rgba(231,231,231,1)] text-center text-base mb-8"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority <br />
+            have suffered alteration in some form, by injected humour.
+          </p>
+          <div class="flex justify-center items-center gap-2 mb-8">
+            <input
+              class="text-start md:w-[500px] md:h-[64px] w-[250px] h-[45px] rounded-lg px-6 text-xl"
+              type="search"
+              placeholder="Search your service"
+            />
+            <button
+              class="bg-primaryColor text-white md:h-[64px] md:w-[150px] h-[45px] w-[70px] rounded-lg text-xl"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--Header End-->
 
     <!--Main Start-->
-    <main></main>
+    <main class="w-11/12 mx-auto"></main>
     <!--Main End-->
 
     <!--Footer Start-->
